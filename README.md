@@ -7,7 +7,10 @@ Signed builds of **bboxy450-term**, the GPU terminal for running agent swarms.
 ## Install
 
 ```sh
-brew install --cask bboxy450/tap/bboxy450-term
+brew tap bboxy450/tap
+brew trust --tap bboxy450/tap
+brew install --cask bboxy450-term
+xattr -dr com.apple.quarantine /Applications/bboxy450-term.app   # once: not yet notarized
 ```
 
 Or download `bboxy450-term-<version>-macos-arm64.zip` from [Releases](https://github.com/bboxy450/bboxy450-term-releases/releases).
